@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iro Sotiriadou</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+      <!-- Navigation Bar -->
+      <nav class="top-navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Header Section -->
+    <header class="header-top" id="about">
+        <div class="profile-container">
+            <img src="photo.jpg" alt="Iro Sotiriadou">
+            <h1 class="profile-name">Iro Sotiriadou</h1>
+        </div>
+
+        
+       
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>I'm someone who loves bringing ideas to life, whether that's through design, problem-solving, or building something from scratch. I enjoy experimenting, learning new things, and finding better ways to make things look and work great. I'm naturally curious, always improving my skills, and I take pride in creating work that feels both thoughtful and unique.  Scroll down to learn more about me !</p>
+         </div>
+        </div>
+    </header>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <div class="card">
+            <h3>Education</h3>
+            <ul>
+                <li><strong>2022-present:</strong> Fourth-year undergraduate student, Electrical and Computer Engineering Dept., University of W. Macedonia, Kozani, Greece</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Experience</h3>
+            <ul>
+                <li><strong>January 2024 - October 2025 :</strong> Avionics Engineer, ASPiRE UoWM</li>
+                <li><strong>October 2025 - Present :</strong> BioSystems & Applied Science Senior Engineer, BioMec UoWM</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Languages:</strong> Greek (native), English (C2, ECPE, Michigan University)</li>
+                <li><strong>Computer Skills:</strong> Ms Office, MATLAB, C, AutoCad, Logisim, KiCad</li>
+                <li><strong>Personal Skills:</strong> Very good communication skills, Teamwork, Ability to work under pressure</li>
+            </ul>
+        </div>
+            
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+            <div class="card" id="project1">
+                <h3>Project Solaris</h3>
+                <ul>
+                    <li>Solaris is one of the projects of the aerospace student group ASPiRE. During this project, a rocket was created that participated in the European Rocketry Chalenge in 2025. My task was to design the PCB development for a Flight Computer and Power Distribution Network (PDN), implementing four-layer boards with dedicated power and ground planes to ensure signal integrity, electromagnetic compatibility, and thermal reliability. I tried to optimize as much as possible component placement, controlled-impedance routing, and high-current power paths to deliver a compact, robust, and flight-ready avionics hardware platform. .</li>
+                    <a href="https://aspire.uowm.gr/team/" target="_blank">View on ASPiRE's website</a>
+                </ul>
+            </div>
+            <div class="card" id="project2">
+                <h3>Development of a suitable computational model for the diagnosis, treatment and prevention of Breast Cancer</h3>
+                <ul>
+                    <li>Currently developing a computational and mathematical modeling framework for the diagnosis, treatment, and prevention of breast cancer as part of a Biomedical Engineering student research group at the University of Western Macedonia. The project integrates biological theory, statistical cancer data, and cellular dynamics with machine-learning inputs (e.g., radiation data and physiological parameters) to construct and validate a system of mathematical equations. The work includes nondimensionalization of model parameters, selection of appropriate numerical methods, implementation of the model in code, stability and sensitivity analysis, and graphical visualization of multiple clinical scenarios to support data-driven conclusions.</li>
+                    <a href="https://biomecteam.uowm.gr/" target="_blank">View on BioMec's website</a>
+                </ul>
+            </div>
+    </section>
+    
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+        <h3 class="h3 form-title">Contact Form</h3>
+        <div id="thankYouMessage" style="display: none;">
+            <p>Thank you for your message! I will get back to you soon.</p>
+        </div>
+        <form name="contactForm" method="POST" netlify netlify-honeypot="bot-field" id="contactForm" data-netlify="true">
+            <input type="hidden" name="form-name" value="contactForm">
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+            <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
+        </form>
+    </section>
+<script src="formValidation.js"></script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Iro Sotiriadou</p>
+        <a href="https://www.linkedin.com/in/iro-sotiriadou-a56391333/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/irostr" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>
+</html>
